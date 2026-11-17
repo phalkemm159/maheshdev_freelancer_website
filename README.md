@@ -1,113 +1,267 @@
-## Quick start on Windows
+# MaheshDev --- Freelancing Portfolio
 
-1. Extract the ZIP file.
-2. Open the `maheshdev-portfolio` folder.
-3. Double-click `RUN-WEBSITE.bat`.
-4. On the first run, it installs npm dependencies automatically (internet required).
-5. It starts the Next.js development server and opens http://localhost:3000.
+**MaheshDev** is the personal freelancing portfolio of **Mahesh
+Phalke**, an independent developer based in India. The website presents
+freelance services, selected projects, development skills, and contact
+options for clients looking for practical digital solutions.
 
-Keep the server terminal window open while viewing the site. Press `Ctrl+C` in that window to stop it. Node.js 18.17+ is required; Node.js 20 LTS is recommended.
+🌐 **Live portfolio:**
+https://maheshdev-freelancer-website.vercel.app/
 
-# MaheshDev – Freelance Portfolio
+------------------------------------------------------------------------
 
-A modern, responsive, SEO-ready portfolio built with Next.js 14, React, Tailwind CSS, and Lucide icons.
+## About the Portfolio
 
-## Requirements
-- Node.js 18.17+ (Node.js 20 LTS recommended)
-- npm
+The portfolio is designed to help potential clients understand what I
+offer, review examples of my work, and contact me about a project.
 
-## Run on Windows
+### Services
 
-1. Extract the ZIP.
-2. Open the `maheshdev-portfolio` folder in VS Code.
-3. Open the integrated terminal.
-4. Install dependencies:
+-   **Web Development** --- Responsive websites and full-stack web
+    applications using React, Next.js, Node.js, Express, and MongoDB.
+-   **Python Automation** --- Python-based automation and practical
+    workflow solutions.
+-   **Data Analytics** --- Data cleaning, analysis, and visualization,
+    including useful Excel dashboards.
 
-   ```bash
-   npm install
-   ```
+## Website Features
 
-5. Start the development server:
+-   Modern, responsive layout for desktop, tablet, and mobile
+-   Dark mode and light mode toggle
+-   Custom MaheshDev logo, favicon, and app icons
+-   Profile introduction and service highlights
+-   Selected project portfolio with repository links and available live
+    demos
+-   Contact links for email, phone, WhatsApp, LinkedIn, Upwork,
+    Freelancer, and GitHub
+-   SEO metadata, Open Graph metadata, sitemap, and robots configuration
+-   Ready for deployment on Vercel
 
-   ```bash
-   npm run dev
-   ```
+## Tech Stack
 
-6. Visit http://localhost:3000
+  Technology       Usage
+  ---------------- -------------------------------------------
+  Next.js 14       React framework and application structure
+  React 18         UI components
+  JavaScript       Application logic
+  Tailwind CSS 3   Styling configuration
+  Lucide React     Icons
+  Vercel           Deployment platform
 
-## Personalize before launch
+------------------------------------------------------------------------
 
-Contact details have been added to the homepage:
-- Phone: `+91 98345 70499` (click-to-call)
-- Email: `phalkemm234@gmail.com` (click-to-email)
-- LinkedIn: `https://www.linkedin.com/in/mahesh-phalke159`
-- Upwork: `https://www.upwork.com/freelancers/~0186912d29790262f8`
-- Freelancer: `https://www.freelancer.in/u/phalkemm159`
-- The ServiceHub GitHub link with the exact repository URL.
-- If you deploy to a different domain, update the production URL in `app/layout.js`, `app/sitemap.js`, and `app/robots.js`.
+## Run Locally
 
-Review project descriptions so they only claim features you have actually built. Add genuine project screenshots and a social sharing image (`app/opengraph-image.png` or `app/opengraph-image.jpg`) before sharing the site widely.
+### Prerequisites
 
-## SEO included
+-   Node.js 18.17 or later (Node.js 20 LTS recommended)
+-   npm
+-   Git (optional, but recommended)
 
-- Page title and meta description
-- Relevant keyword metadata
-- Open Graph and Twitter card metadata
-- Robots metadata and `robots.txt` route
-- Sitemap route (activate after setting your real domain)
-- Person JSON-LD structured data
-- Semantic sections and accessible navigation labels
-- Responsive layout and reduced-motion support
+### 1. Get the project
 
-## Production build
+Clone your GitHub repository:
 
-```bash
-npm run build
-npm start
+``` bash
+git clone YOUR_REPOSITORY_URL
+cd maheshdev-portfolio
 ```
 
-## Deploy to Vercel
+Or download and extract the project ZIP, then open the
+`maheshdev-portfolio` folder in your terminal or VS Code.
 
-1. Push the project to a GitHub repository.
-2. Sign in to Vercel using GitHub.
-3. Import the repository.
-4. Deploy with the default Next.js settings.
-5. Add your custom domain and then update `app/sitemap.js`.
+### 2. Install dependencies
 
-## Important SEO note
+``` bash
+npm install
+```
 
-Metadata and structured data help search engines understand the site; they do not guarantee rankings. After deployment, verify the domain in Google Search Console, submit `/sitemap.xml`, and request indexing. Performance and search visibility also depend on real content, backlinks, page speed, and competition.
+### 3. Start the development server
 
+``` bash
+npm run dev
+```
 
-### Homepage profile photo
-Your homepage portrait is stored at `public/images/mahesh-phalke.webp`. Replace this file with another optimized WebP image using the same filename if you want to update your photo.
+Open http://localhost:3000 in your browser.
 
+To stop the server, press `Ctrl + C` in the terminal.
 
-## Featured projects and links
+### Windows quick start
 
-- **GlobalNest:** [GitHub](https://github.com/phalkemm159/GlobalNest-Fullstack) · [Live demo](https://globalnest.onrender.com/)
-- **Hospital Management System:** [GitHub](https://github.com/phalkemm159/Hospital_Management_System_Project) · [Live demo](https://hospital-management-system-w6nv.onrender.com/)
-- **EduRAG:** [GitHub](https://github.com/phalkemm159/EduRAG-AI-Powered-Learning-Assistant)
-- **All PDFs AI:** [GitHub](https://github.com/phalkemm159/ALL_PDFS_AI) · [Live demo](https://all-pdfs-ai.onrender.com/)
-- **Collaborative Whiteboard:** [GitHub](https://github.com/phalkemm159/WhiteBoard-Collaboration-Tool)
+You can also double-click `RUN-WEBSITE.bat` from the project folder. On
+first run, it installs dependencies and starts the local development
+server. An internet connection is required for the initial dependency
+installation.
 
-Live links were checked on 17 November 2026. The GlobalNest URL returned HTTP 503 during the check; verify its Render service status before promoting that demo.
+### 4. Test a production build
 
+``` bash
+npm run build
+```
 
-## WhatsApp contact
+To run the production build locally:
 
-Homepage WhatsApp button: https://wa.me/9834570499/?text=Hi%20wanted%20to%20connect%20.....
+``` bash
+npm run start
+```
 
+------------------------------------------------------------------------
 
-## Responsive layout
+## Deploy on Vercel
 
-The homepage includes responsive layouts for desktop, tablet, and mobile widths, with additional safeguards for narrow screens (including 360px devices). Before publishing, preview the site in browser device emulation at 360px, 390px, 768px, 1024px, and desktop width, and verify navigation, hero buttons, portrait, project cards, and contact links.
+### Deploy using GitHub
 
+1.  Push the contents of the `maheshdev-portfolio` folder to a GitHub
+    repository.
 
-## Vercel deployment
+2.  Go to https://vercel.com/new and sign in.
 
-See [DEPLOY-TO-VERCEL.md](./DEPLOY-TO-VERCEL.md) for GitHub import and Vercel CLI deployment steps. The production domain is currently configured as `https://mahesh-phalke-portfolio-minimist.vercel.app`.
+3.  Select **Import Git Repository** and choose your portfolio
+    repository.
 
+4.  Set **Root Directory** to the folder that contains `package.json`.
 
-### Custom website icon
-The custom favicon is included in `public/favicon.ico` and `public/icon.png`; the Apple touch icon is `public/apple-icon.png`. Next.js metadata in `app/layout.js` references these assets. Vercel will deploy them automatically.
+    -   If `package.json` is at the repository root, use `./`.
+
+5.  Select **Next.js** as the framework preset if it is not detected
+    automatically.
+
+6.  Use the default settings:
+
+      Setting            Value
+      ------------------ -----------------
+      Framework Preset   Next.js
+      Install Command    `npm install`
+      Build Command      `npm run build`
+      Output Directory   Default
+
+7.  Click **Deploy**.
+
+Vercel will build and publish the site. When the GitHub repository is
+connected, pushing changes to the configured production branch can
+trigger a new deployment.
+
+### Domain and SEO settings
+
+The project currently uses this domain in its SEO metadata:
+
+``` text
+https://mahesh-phalke-portfolio-minimist.vercel.app
+```
+
+If you deploy to a different domain, update the canonical/metadata base
+URL in `app/layout.js` and the site URL in `app/sitemap.js` and
+`app/robots.js` where applicable.
+
+------------------------------------------------------------------------
+
+## Featured Projects
+
+The portfolio currently highlights these projects:
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Project                 Source Code                                                                        Live Demo
+  ----------------------- ---------------------------------------------------------------------------------- --------------------------------------------------------------
+  GlobalNest              [GitHub repository](https://github.com/phalkemm159/GlobalNest-Fullstack)           [View demo](https://globalnest.onrender.com/)
+
+  Hospital Management     [GitHub                                                                            [View
+  System                  repository](https://github.com/phalkemm159/Hospital_Management_System_Project)     demo](https://hospital-management-system-w6nv.onrender.com/)
+
+  EduRAG --- AI-Powered   [GitHub                                                                            No live demo link currently listed
+  Learning Assistant      repository](https://github.com/phalkemm159/EduRAG-AI-Powered-Learning-Assistant)   
+
+  All PDFs AI             [GitHub repository](https://github.com/phalkemm159/ALL_PDFS_AI)                    [View demo](https://all-pdfs-ai.onrender.com/)
+
+  Collaborative           [GitHub repository](https://github.com/phalkemm159/WhiteBoard-Collaboration-Tool)  No live demo link currently listed
+  Whiteboard                                                                                                 
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Live demo availability depends on the respective hosting services.
+
+------------------------------------------------------------------------
+
+## Contact & Freelance Enquiries
+
+For project discussions and collaboration:
+
+-   **Email:** <phalkemm234@gmail.com>
+-   **Phone:** [+91 98345 70499](tel:+919834570499)
+-   **WhatsApp:** [Message me](https://wa.me/9834570499/)
+-   **LinkedIn:** https://www.linkedin.com/in/mahesh-phalke159
+-   **GitHub:** https://github.com/phalkemm159
+-   **Upwork:**
+    https://www.upwork.com/freelancers/\~0186912d29790262f8?mp_source=share
+-   **Freelancer:** https://www.freelancer.in/u/phalkemm159
+
+The main project enquiry button opens the visitor's default email
+application with the recipient and subject pre-filled. The visitor must
+send the email themselves; the website does not send email
+automatically.
+
+------------------------------------------------------------------------
+
+## Project Structure
+
+``` text
+maheshdev-portfolio/
+├── app/
+│   ├── globals.css       # Global styles, themes, and responsive design
+│   ├── layout.js         # Root layout and SEO metadata
+│   ├── page.js           # Portfolio page and content sections
+│   ├── theme-toggle.js   # Dark/light theme toggle
+│   ├── robots.js         # Search engine crawling rules
+│   └── sitemap.js        # Sitemap generation
+├── public/
+│   ├── favicon.ico
+│   ├── favicon.png
+│   ├── icon.png
+│   ├── apple-icon.png
+│   └── images/
+│       └── mahesh-phalke.webp
+├── package.json
+├── next.config.mjs
+├── postcss.config.mjs
+├── tailwind.config.js
+├── vercel.json
+├── RUN-WEBSITE.bat
+└── README.md
+```
+
+## Customize the Website
+
+  ------------------------------------------------------------------------
+  What to change                      File
+  ----------------------------------- ------------------------------------
+  Page content, services, projects,   `app/page.js`
+  contact links                       
+
+  Colors, typography, theme styles,   `app/globals.css`
+  responsive layout                   
+
+  Theme toggle                        `app/theme-toggle.js`
+
+  Page title, description, SEO and    `app/layout.js`
+  social metadata                     
+
+  Sitemap and crawler rules           `app/sitemap.js`, `app/robots.js`
+
+  Profile image                       `public/images/mahesh-phalke.webp`
+
+  Browser and app icons               Files in `public/`
+  ------------------------------------------------------------------------
+
+After editing, run `npm run build` to check the production build.
+
+------------------------------------------------------------------------
+
+## License & Usage
+
+This is a personal freelancing portfolio. The personal branding, profile
+photograph, and portfolio content belong to their respective owner.
+Please ask for permission before reusing personal images, branding, or
+content.
+
+------------------------------------------------------------------------
+
+**Designed and developed by Mahesh Phalke**\
+🌐 https://mahesh-phalke-portfolio-minimist.vercel.app/
